@@ -1,11 +1,13 @@
 class CamionLigero extends Vehiculo {
 
+    //Constructor
     public CamionLigero(int autonomia) {
-        this.autonomia = autonomia;
+        super(autonomia);
     }
 
+    //Implementacion del metodo clone
     @Override
     public Vehiculo clone() {
-        return new CamionLigero(this.autonomia);
+        return new CamionLigero(this.getAutonomia());
     }
 }
