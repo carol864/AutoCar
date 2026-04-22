@@ -1,4 +1,6 @@
 class Contrato {
+
+    //Atributos
     String cliente;
     Vehiculo vehiculo;
     String plan;
@@ -6,6 +8,7 @@ class Contrato {
     boolean seguro;
     boolean cargador;
 
+    //Metodo para mostrar la informacion del contrato
     public void mostrar() {
         System.out.println("Cliente: " + cliente);
         System.out.println("Vehículo: " + vehiculo.getClass().getSimpleName());
